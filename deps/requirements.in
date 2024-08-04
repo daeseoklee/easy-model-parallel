@@ -1,0 +1,12 @@
+rich>=13.0.0
+tqdm>=4.0.0
+pillow
+matplotlib
+numpy
+slack-bolt
+clearml
+python-dotenv
+ansi2html
+cairosvg
+
+torch>=2.2.0
