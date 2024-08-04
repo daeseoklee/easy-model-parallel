@@ -31,10 +31,13 @@ bash scripts/update_requirements.sh # This can be updated
 
 #### Device functor
 
-A *Device functor* (`DeviceFunctor` objects) turns tensors, modules and operations into `DeviceManagedTensor`, `DeviceManagedModule` and `DeviceManagedOperation` objects respectively. 
+A *Device functor* (`DeviceFunctor` object) turns tensors, modules and operations into `DeviceManagedTensor`, `DeviceManagedModule` and `DeviceManagedOperation` objects respectively. 
 
 Device functor application can be performed with the following syntax: 
 ```
+import torch
+import emp
+
 def main(devices):
     F = emp.DeviceFunctor(devices)
     device1 = F.allocate_device()
